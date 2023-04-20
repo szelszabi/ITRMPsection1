@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Bold.ttf);
+}
+
+.fb-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .fb-subcontainer {
+        width: 128px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+        margin-bottom: 24px;
+        .fb-item {
+            font-family: Roboto;
+            text-transform: uppercase;
+            font-size: 14px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            button {
+                width: 100%;
+                background-color: #006633;
+                font-family: Roboto;
+                text-transform: uppercase;
+                font-size: 14px;
+                color: #ffffff;
+                height: 32px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+                transition: 0.3s;
+                border: 0px;
+                .icon {
+                    margin-right: 4px;
+                }
+            }
+            button:disabled {
+                background-color: #dadada;
+                color: #bfbfbf;
+            }
+            button:not([disabled]):hover {
+                cursor: pointer;
+                background-color: #55ae3a;
+            }
+            button:not([disabled]):active {
+                background-color: #363636;
+            }
+        }
+        .fb-item:nth-child(1) {
+            letter-spacing: -0.084px;
+        }
+    }
+}
