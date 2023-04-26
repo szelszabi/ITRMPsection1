@@ -61,6 +61,7 @@
   cursor: pointer;
   height: 18px;
   width: 18px;
+  z-index: 1;
 }
 .fb-container .checkbox input[type=checkbox]:checked ~ .checkmark {
   background-color: #55ae3a;

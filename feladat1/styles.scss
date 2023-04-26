@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Roboto;
-    src: url(Roboto-Bold.ttf);
-}
-
 .fb-container {
     position: absolute;
     top: 50%;
@@ -12,59 +7,60 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     .fb-subcontainer {
         width: 128px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         margin: 0;
-        margin-bottom: 24px;
-        gap: 20px;
-        .fb-item {
-            font-family: Roboto;
-            text-transform: uppercase;
-            font-size: 14px;
+        gap: 8px;
+        h1 {
             height: 20px;
+            margin: 0;
             display: flex;
             flex-direction: row;
             align-items: center;
+
+            text-transform: uppercase;
+            font-family: Roboto;
+            font-weight: 700;
+            font-size: 14px;
             letter-spacing: -0.084px;
-            font-style: normal;
             line-height: 143%;
-            button {
-                width: 100%;
-                line-height: 30px;
-                background-color: #006633;
-                font-family: Roboto;
-                text-transform: uppercase;
-                font-size: 14px;
-                color: #ffffff;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                border-radius: 20px;
-                transition: 0.3s;
-                border: 0px;
-                .icon {
-                    margin-right: 4px;
-                    line-height: 32px;
-                }
+            font-style: normal;
+        }
+        button {
+            padding: 0;
+            width: 100%;
+            height: 32px; 
+            background-color: #006633;
+            font-family: Roboto;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            transition: 0.3s;
+            border: 0px;
+            .icon {
+                margin-right: 4px;
+                line-height: 32px;
             }
-            button.wicon{
-                align-self: flex-end;
-            }   
-            button:disabled {
-                background-color: #dadada;
-                color: #bfbfbf;
-            }
-            button:not([disabled]):hover {
-                cursor: pointer;
-                background-color: #55ae3a;
-            }
-            button:not([disabled]):active {
-                background-color: #363636;
-            }
+        } 
+        button:disabled {
+            background-color: #dadada;
+            color: #bfbfbf;
+        }
+        button:not([disabled]):hover {
+            cursor: pointer;
+            background-color: #55ae3a;
+        }
+        button:not([disabled]):active {
+            background-color: #363636;
         }
     }
 }
